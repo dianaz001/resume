@@ -126,7 +126,7 @@ const Resume: React.FC = () => {
                         <span style={{ color: 'var(--text-secondary)' }}>Sept 2023 – Sept 2025</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Utoronto_coat_of_arms_classic.png" alt="UofT Logo" style={{ width: '40px', height: 'auto' }} />
+                        <img src="/assets/uoft-logo.png" alt="UofT Logo" style={{ width: '40px', height: 'auto' }} />
                         <p style={{ color: 'var(--accent)' }}>University of Toronto</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
@@ -140,7 +140,7 @@ const Resume: React.FC = () => {
                         <span style={{ color: 'var(--text-secondary)' }}>2014 – 2019</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHkEwD-G3zGhg/company-logo_200_200/company-logo_200_200/0/1630656094605?e=1745452800&v=beta&t=H3-w2tGqH7T9zOq7gq6o2R8sR5o3P5g6l7sq5z5o5q5" alt="UIS Logo" style={{ width: '40px', height: 'auto', borderRadius: '4px' }} />
+                        <img src="/assets/uis-logo.png" alt="UIS Logo" style={{ width: '40px', height: 'auto', borderRadius: '4px' }} />
                         <p style={{ color: 'var(--accent)' }}>Universidad Industrial de Santander</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
