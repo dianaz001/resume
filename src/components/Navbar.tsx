@@ -33,18 +33,18 @@ const Navbar: React.FC = () => {
               color: location.pathname === '/' ? 'var(--accent)' : 'var(--text-secondary)'
             }}
           >
-            <FileText size={18} /> Resume
+            <Briefcase size={18} /> Portfolio
           </Link>
           <Link
-            to="/portfolio"
+            to="/resume"
             style={{
               display: 'flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: location.pathname === '/portfolio' ? 'var(--accent)' : 'var(--text-secondary)'
+              color: location.pathname === '/resume' ? 'var(--accent)' : 'var(--text-secondary)'
             }}
           >
-            <Briefcase size={18} /> Portfolio
+            <FileText size={18} /> Resume
           </Link>
         </div>
       </div>
