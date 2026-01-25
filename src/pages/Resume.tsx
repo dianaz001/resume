@@ -1,5 +1,4 @@
-import React from 'react';
-import { Mail, Linkedin, Phone, MapPin } from 'lucide-react';
+import { Mail, Linkedin, Phone, MapPin, User, BrainCircuit, Briefcase, GraduationCap, Award } from 'lucide-react';
 
 const Resume: React.FC = () => {
     return (
@@ -28,7 +27,10 @@ const Resume: React.FC = () => {
 
             {/* Summary */}
             <section>
-                <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Summary</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
+                    <User size={24} color="var(--accent)" />
+                    <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Summary</h2>
+                </div>
                 <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
                     Chemical Engineering professional and University of Toronto MASc graduate with a track record of optimizing technical systems and workflows.
                     Proficient in autonomous workflow architecting, leveraging Claude Code agents to transition business operations from manual processes to scalable, automated digital infrastructure.
@@ -38,8 +40,11 @@ const Resume: React.FC = () => {
 
             {/* Key Skills */}
             <section style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Key Skills</h2>
-                <ul style={{ color: 'var(--text-secondary)', listStyleType: 'none', paddingLeft: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
+                    <BrainCircuit size={24} color="var(--accent)" />
+                    <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Key Skills</h2>
+                </div>
+                <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem' }}>
                     <li style={{ marginBottom: '0.5rem' }}>
                         <strong style={{ color: 'var(--text-primary)' }}>Automation & Systems:</strong> Workflow automation, digital tool integration
                     </li>
@@ -60,7 +65,10 @@ const Resume: React.FC = () => {
 
             {/* Experience */}
             <section style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Relevant Experience</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
+                    <Briefcase size={24} color="var(--accent)" />
+                    <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Relevant Experience</h2>
+                </div>
 
                 <div style={{ marginBottom: '3rem' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
@@ -68,7 +76,7 @@ const Resume: React.FC = () => {
                         <span style={{ color: 'var(--text-secondary)' }}>Sept 2023 – Nov 2025</span>
                     </div>
                     <p style={{ color: 'var(--accent)', marginBottom: '1rem' }}>University of Toronto</p>
-                    <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem' }}>
+                    <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem', listStyleType: 'disc' }}>
                         <li>Conducted applied research on assessing carbon dioxide removal strategies to support national climate goals.</li>
                         <li>Co-supervised by Dr. Heather Maclean and Dr. Bradley Saville.</li>
                         <li>Relevant skills: organization, attention to detail, verbal and written communication.</li>
@@ -82,7 +90,7 @@ const Resume: React.FC = () => {
                     </div>
                     <p style={{ color: 'var(--accent)', marginBottom: '1rem' }}>Ecosi</p>
 
-                    <ul style={{ color: 'var(--text-secondary)', listStyleType: 'none', paddingLeft: 0, marginTop: '1rem' }}>
+                    <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem', marginTop: '1rem', listStyleType: 'disc' }}>
                         <li style={{ marginBottom: '1rem' }}>
                             <strong style={{ color: 'var(--text-primary)' }}>Operations Systematization:</strong> Led the implementation and integration of new digital tools, achieving a 25% reduction in operational cycle times.
                         </li>
@@ -107,14 +115,18 @@ const Resume: React.FC = () => {
 
             {/* Education */}
             <section>
-                <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Education</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
+                    <GraduationCap size={24} color="var(--accent)" />
+                    <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Education</h2>
+                </div>
 
                 <div style={{ marginBottom: '2rem' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
                         <h3>Master of Applied Science in Engineering</h3>
                         <span style={{ color: 'var(--text-secondary)' }}>Sept 2023 – Sept 2025</span>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Utoronto_coat_of_arms_classic.png" alt="UofT Logo" style={{ width: '40px', height: 'auto' }} />
                         <p style={{ color: 'var(--accent)' }}>University of Toronto</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
@@ -127,7 +139,8 @@ const Resume: React.FC = () => {
                         <h3>BASc in Chemical Engineering</h3>
                         <span style={{ color: 'var(--text-secondary)' }}>2014 – 2019</span>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHkEwD-G3zGhg/company-logo_200_200/company-logo_200_200/0/1630656094605?e=1745452800&v=beta&t=H3-w2tGqH7T9zOq7gq6o2R8sR5o3P5g6l7sq5z5o5q5" alt="UIS Logo" style={{ width: '40px', height: 'auto', borderRadius: '4px' }} />
                         <p style={{ color: 'var(--accent)' }}>Universidad Industrial de Santander</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
@@ -138,7 +151,10 @@ const Resume: React.FC = () => {
 
             {/* Awards */}
             <section style={{ paddingBottom: '8rem' }}>
-                <h2 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Awards</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--secondary)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
+                    <Award size={24} color="var(--accent)" />
+                    <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Awards</h2>
+                </div>
                 <div>
                     <h3>Outstanding Student Award</h3>
                     <p style={{ color: 'var(--accent)', marginBottom: '0.5rem' }}>Universidad Industrial de Santander, 2020</p>

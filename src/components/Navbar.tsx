@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         alignItems: 'center'
       }}>
         <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--white)' }}>
-          DZ<span style={{ color: 'var(--accent)' }}>.</span>
+          Diana Zaraza<span style={{ color: 'var(--accent)' }}>.</span>
         </Link>
 
         <div style={{ display: 'flex', gap: '2rem' }}>

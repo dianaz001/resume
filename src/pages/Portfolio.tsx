@@ -36,17 +36,17 @@ const portfolioData: PortfolioItem[] = [
     {
         id: 'operations-systematization',
         title: 'Operations Systematization',
-        company: 'Eco Soluciones Internacionales',
+        company: 'Ecosi',
         description: 'Led the implementation and integration of new digital tools, achieving a 25% reduction in operational cycle times across the company.',
         skills: ['Digital Transformation', 'System Integration', 'Cycle Time Reduction'],
         placeholderIcon: <Target size={24} />,
         category: 'Operations',
-        image: '/assets/ops-workflow.png'
+        image: '/assets/ops-systematization-new.png'
     },
     {
         id: 'workflow-automation',
         title: 'Internal Workflow Automation',
-        company: 'Eco Soluciones Internacionales',
+        company: 'Ecosi',
         description: 'Designed and automated workflows between internal tools, reducing manual tasks by 40% and improving KPI reporting speed by 30%.',
         skills: ['Process Engineering', 'Automation', 'KPI Tracking'],
         placeholderIcon: <Cpu size={24} />,
@@ -56,7 +56,7 @@ const portfolioData: PortfolioItem[] = [
     {
         id: 'hiring-logistics',
         title: 'Hiring Platform Deployment',
-        company: 'Eco Soluciones Internacionales',
+        company: 'Ecosi',
         description: 'Collaborated with HR to deploy a new hiring platform and supported end-to-end onboarding coordination.',
         skills: ['HR Ops', 'Logistics', 'Platform Deployment'],
         placeholderIcon: <Users size={24} />,
@@ -117,22 +117,6 @@ const Portfolio: React.FC = () => {
                                     transition: 'transform 0.5s ease'
                                 }}
                             />
-                            {/* Overlay Badge */}
-                            <div style={{
-                                position: 'absolute',
-                                top: '1rem',
-                                right: '1rem',
-                                backgroundColor: 'rgba(46, 139, 87, 0.9)',
-                                backdropFilter: 'blur(4px)',
-                                color: 'var(--white)',
-                                padding: '0.5rem',
-                                borderRadius: '50%',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center'
-                            }}>
-                                {item.placeholderIcon}
-                            </div>
                         </div>
 
                         <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
