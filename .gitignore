@@ -1,0 +1,25 @@
+# Global
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.tgn
+*.swp
+*.swo
+
+# Typos
+.vscode/spellright.dict
+
+# Testing
+coverage
+
+# Environment variables
+.env
+.env.*
+!.env.example
