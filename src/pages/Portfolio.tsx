@@ -55,7 +55,7 @@ const portfolioData: PortfolioItem[] = [
     },
     {
         id: 'hiring-logistics',
-        title: 'Hiring Platform Deployment',
+        title: 'Project Management Platform Deployment',
         company: 'Ecosi',
         description: 'Collaborated with HR to deploy a new hiring platform and supported end-to-end onboarding coordination.',
         skills: ['HR Ops', 'Logistics', 'Platform Deployment'],
