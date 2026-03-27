@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Cpu, TrendingUp, Users, LayoutDashboard } from 'lucide-react';
+import { Target, Cpu, TrendingUp, Users } from 'lucide-react';
 
 interface PortfolioItem {
     id: string;
@@ -13,36 +13,6 @@ interface PortfolioItem {
 }
 
 const portfolioData: PortfolioItem[] = [
-    {
-        id: 'opendoor-grocery',
-        title: 'Opendoor — Grocery Expense Tracker',
-        company: 'Personal Project',
-        description: 'Built a personal finance dashboard that tracks grocery spending across Toronto stores, with receipt scanning, category breakdowns, monthly trends, and budget allocation views.',
-        skills: ['Full-Stack Development', 'Data Visualization', 'Supabase', 'React'],
-        placeholderIcon: <LayoutDashboard size={24} />,
-        category: 'Software',
-        image: '/assets/opendoor-grocery.png'
-    },
-    {
-        id: 'opendoor-health',
-        title: 'Opendoor — Health & Lab Results',
-        company: 'Personal Project',
-        description: 'Designed a health tracking module that parses lab reports, displays key biomarkers with status indicators, and tracks trends over time for proactive health management.',
-        skills: ['Health Data', 'Document Parsing', 'UX Design', 'React'],
-        placeholderIcon: <LayoutDashboard size={24} />,
-        category: 'Software',
-        image: '/assets/opendoor-health.png'
-    },
-    {
-        id: 'opendoor-rentals',
-        title: 'Opendoor — Toronto Rental Search',
-        company: 'Personal Project',
-        description: 'Created a rental search tool with interactive map integration, listing comparisons, and neighborhood scoring to streamline apartment hunting in Toronto.',
-        skills: ['Map Integration', 'Web Scraping', 'Geospatial Data', 'React'],
-        placeholderIcon: <LayoutDashboard size={24} />,
-        category: 'Software',
-        image: '/assets/opendoor-rentals.png'
-    },
     {
         id: 'cdr-research',
         title: 'Carbon Dioxide Removal Assessment',
