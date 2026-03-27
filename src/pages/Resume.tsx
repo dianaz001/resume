@@ -7,7 +7,7 @@ const Resume: React.FC = () => {
             <header style={{ padding: '4rem 0' }}>
                 <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Diana Zaraza</h1>
                 <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px' }}>
-                    Operations Systematization | Coordination | Sustainability
+                    Operations Specialist | Systems Builder | AI-Augmented Workflows
                 </p>
                 <div style={{ display: 'flex', gap: '1.5rem', marginTop: '2rem', flexWrap: 'wrap' }}>
                     <a href="mailto:dianalzaraza@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -32,9 +32,7 @@ const Resume: React.FC = () => {
                     <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Summary</h2>
                 </div>
                 <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-                    Chemical Engineering professional and University of Toronto MASc graduate with a track record of optimizing technical systems and workflows.
-                    Proficient in autonomous workflow architecting, leveraging Claude Code agents to transition business operations from manual processes to scalable, automated digital infrastructure.
-                    Proven ability to reduce cycle times and manual tasks in high-growth, sustainability-focused environments.
+                    Operations specialist with a bias toward action and a track record of building systems that move fast. I take ambiguous problems, figure out the right tools (including AI agents), and own the outcome end to end. At Ecosi, I reduced operational cycle times by 25% and cut manual tasks by 40% by designing and automating workflows across internal platforms. At the University of Toronto, I led independent research with minimal oversight, managing competing workstreams and iterating quickly to deliver publishable results.
                 </p>
             </section>
 
@@ -44,23 +42,23 @@ const Resume: React.FC = () => {
                     <BrainCircuit size={24} color="var(--accent)" />
                     <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Key Skills</h2>
                 </div>
-                <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem' }}>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        <strong style={{ color: 'var(--text-primary)' }}>Automation & Systems:</strong> Workflow automation, digital tool integration
-                    </li>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        <strong style={{ color: 'var(--text-primary)' }}>Business Operations:</strong> Internal tools management, process documentation
-                    </li>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        <strong style={{ color: 'var(--text-primary)' }}>AI-Enabled Process Scaling:</strong> Utilizing LLM-based agents (Claude Code) to transition from manual tasks management to automated, script-driven operation oversight
-                    </li>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        <strong style={{ color: 'var(--text-primary)' }}>Independent Work:</strong> Effective time management
-                    </li>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        <strong style={{ color: 'var(--text-primary)' }}>Communication:</strong> Strong verbal and written skills
-                    </li>
-                </ul>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                    {['AI-augmented operations', 'Tooling & systems adaptability', 'Process improvement', 'Communication & relationship management', 'Project management'].map((skill) => (
+                        <span
+                            key={skill}
+                            style={{
+                                fontSize: '0.9rem',
+                                color: 'var(--accent)',
+                                backgroundColor: 'rgba(46, 139, 87, 0.1)',
+                                padding: '0.4rem 0.85rem',
+                                borderRadius: '4px',
+                                border: '1px solid rgba(46, 139, 87, 0.2)'
+                            }}
+                        >
+                            {skill}
+                        </span>
+                    ))}
+                </div>
             </section>
 
             {/* Experience */}
@@ -70,45 +68,31 @@ const Resume: React.FC = () => {
                     <h2 style={{ fontSize: '1.5rem', margin: 0 }}>Relevant Experience</h2>
                 </div>
 
-                <div style={{ marginBottom: '3rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
+                <div style={{ marginBottom: ‘3rem’ }}>
+                    <div style={{ display: ‘flex’, justifyContent: ‘space-between’, alignItems: ‘baseline’, marginBottom: ‘0.5rem’ }}>
                         <h3>Research Assistant – Sustainable Systems Research Group</h3>
-                        <span style={{ color: 'var(--text-secondary)' }}>Sept 2023 – Nov 2025</span>
+                        <span style={{ color: ‘var(--text-secondary)’ }}>Sept 2023 – Feb 2026</span>
                     </div>
-                    <p style={{ color: 'var(--accent)', marginBottom: '1rem' }}>University of Toronto</p>
-                    <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem', listStyleType: 'disc' }}>
-                        <li>Conducted applied research on assessing carbon dioxide removal strategies to support national climate goals.</li>
-                        <li>Co-supervised by Dr. Heather Maclean and Dr. Bradley Saville.</li>
-                        <li>Relevant skills: organization, attention to detail, verbal and written communication.</li>
+                    <p style={{ color: ‘var(--accent)’, marginBottom: ‘1rem’ }}>University of Toronto</p>
+                    <ul style={{ color: ‘var(--text-secondary)’, paddingLeft: ‘1.2rem’, listStyleType: ‘disc’ }}>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Validated complex model outputs before downstream impact, assessing technical strategies through KPIs and performance metrics to deliver data-driven recommendations that informed large-scale decision-making</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Identified process gaps and drove continuous improvement by transitioning manual data collection into automated workflows, improving throughput, data consistency, and overall operational speed</li>
                     </ul>
                 </div>
 
-                <div style={{ marginBottom: '3rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
+                <div style={{ marginBottom: ‘3rem’ }}>
+                    <div style={{ display: ‘flex’, justifyContent: ‘space-between’, alignItems: ‘baseline’, marginBottom: ‘0.5rem’ }}>
                         <h3>Process Analyst</h3>
-                        <span style={{ color: 'var(--text-secondary)' }}>March 2021 – Aug 2023</span>
+                        <span style={{ color: ‘var(--text-secondary)’ }}>March 2021 – Aug 2023</span>
                     </div>
-                    <p style={{ color: 'var(--accent)', marginBottom: '1rem' }}>Ecosi</p>
-
-                    <ul style={{ color: 'var(--text-secondary)', paddingLeft: '1.2rem', marginTop: '1rem', listStyleType: 'disc' }}>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Operations Systematization:</strong> Led the implementation and integration of new digital tools, achieving a 25% reduction in operational cycle times.
-                        </li>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Workflow Automation:</strong> Designed and automated workflows between internal tools, reducing manual tasks by 40% and improving KPI reporting speed by 30%.
-                        </li>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Systems Management:</strong> Managed internal operational tools (cloud productivity suite, time-tracking, Dropbox), ensuring platforms remained aligned with evolving company needs.
-                        </li>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Data Organization:</strong> Established scalable folder structures and naming conventions, optimizing the company’s file management system.
-                        </li>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Financial Administration:</strong> Liaised with bookkeepers for budget tracking and reconciliation while managing digital tool procurement.
-                        </li>
-                        <li style={{ marginBottom: '1rem' }}>
-                            <strong style={{ color: 'var(--text-primary)' }}>Hiring Logistics:</strong> Collaborated with HR to deploy a new hiring platform and supported end-to-end onboarding coordination.
-                        </li>
+                    <p style={{ color: ‘var(--accent)’, marginBottom: ‘1rem’ }}>Ecosi</p>
+                    <ul style={{ color: ‘var(--text-secondary)’, paddingLeft: ‘1.2rem’, listStyleType: ‘disc’ }}>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Owned end-to-end execution of operational workflows, leading the implementation and integration of digital tools that reduced cycle times by 25% and cut manual tasks by 40%</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Validated and quality-checked outputs before downstream impact by applying data analysis to measure cross-departmental KPIs, presenting findings on dashboards that enabled fast, accurate decision-making</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Identified process gaps and drove tooling improvements by researching, evaluating, and implementing project management and analytics software to support multidisciplinary engineering operations at scale</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Automated workflows across internal platforms using custom Python integrations and business analytics tools including PowerBI and Zoho Analytics, improving KPI reporting speed by 30%</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Managed a portfolio of concurrent workstreams against hard deadlines, coordinating with external vendors and service providers on procurement, onboarding logistics, and platform alignment</li>
+                        <li style={{ marginBottom: ‘0.75rem’ }}>Maintained detailed documentation habits across all operational tools (cloud productivity, time-tracking, and file management systems) ensuring platforms evolved with company needs</li>
                     </ul>
                 </div>
             </section>
@@ -130,7 +114,7 @@ const Resume: React.FC = () => {
                         <p style={{ color: 'var(--accent)' }}>University of Toronto</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
-                        Relevant courses: Data Analysis, Project Management and Communication, Strategies for achieving Net-Zero
+                        Relevant courses: Data Analysis, Project Management and Communication
                     </p>
                 </div>
 
@@ -144,7 +128,7 @@ const Resume: React.FC = () => {
                         <p style={{ color: 'var(--accent)' }}>Universidad Industrial de Santander</p>
                     </div>
                     <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', fontSize: '0.9rem' }}>
-                        Relevant courses: Bioprocesses I&II, Business Process Management, Finance for Engineers
+                        Relevant courses: Process Engineering, Business Process Management
                     </p>
                 </div>
             </section>
