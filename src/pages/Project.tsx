@@ -43,7 +43,7 @@ const Project: React.FC = () => {
                 <p style={{ fontSize: '0.85rem', color: 'var(--accent)', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
                     Personal Project
                 </p>
-                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Opendoor</h1>
+                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>DianaZ's Operations Hub</h1>
                 <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '650px' }}>
                     A personal life management app that centralizes finances, health, rentals, and more into one clean dashboard.
                 </p>
