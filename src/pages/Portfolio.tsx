@@ -92,7 +92,7 @@ const Portfolio: React.FC = () => {
                             <span style={{
                                 fontSize: '0.9rem',
                                 fontWeight: 600,
-                                color: 'var(--text-primary)',
+                                color: 'var(--heading-secondary)',
                                 fontFamily: "'Source Serif 4', Georgia, serif",
                                 whiteSpace: 'nowrap'
                             }}>

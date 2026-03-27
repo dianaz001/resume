@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  /* Color Palette - Clean Light */
-  --primary: #FFFFFF;
-  --secondary: #F7F7F7;
-  --accent: #3D3DB8;
-  --accent-hover: #2E2E9A;
-  --text-primary: #1A1A1A;
-  --text-secondary: #6B7280;
-  --text-muted: #9CA3AF;
-  --border: #E5E7EB;
-  --border-light: #F0F0F0;
+  /* Color Palette - Navy & Plum */
+  --primary: #FAFBFE;
+  --secondary: #F0F1F8;
+  --accent: #5B4DC7;
+  --accent-hover: #4A3BA8;
+  --text-primary: #1B2040;
+  --text-secondary: #5C6080;
+  --text-muted: #8E92B0;
+  --border: #DDDEED;
+  --border-light: #EDEDF5;
   --white: #FFFFFF;
-  --brand: #8B6914;
+  --brand: #7B5EA7;
+  --heading-primary: #1B2040;
+  --heading-secondary: #2E3460;
+  --heading-accent: #4A3580;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -21,8 +24,8 @@
   --spacing-lg: 4rem;
 
   /* Shadows */
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow: 0 1px 3px rgba(27, 32, 64, 0.05), 0 1px 2px rgba(75, 53, 128, 0.03);
+  --shadow-hover: 0 4px 16px rgba(75, 53, 128, 0.08);
 }
 
 * {
@@ -39,12 +42,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
+h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: var(--heading-primary);
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: var(--heading-secondary);
+  font-weight: 600;
+}
+
 h3,
 h4 {
   font-family: 'Source Serif 4', Georgia, serif;
-  color: var(--text-primary);
+  color: var(--heading-accent);
   font-weight: 600;
 }
 
