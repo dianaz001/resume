@@ -1,62 +1,47 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FileText, Briefcase, FolderOpen } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
 
+  const linkStyle = (path: string) => ({
+    fontSize: '0.95rem',
+    fontWeight: 400 as const,
+    color: location.pathname === path ? 'var(--text-primary)' : 'var(--text-secondary)',
+    transition: 'color 0.2s ease',
+    padding: '0.25rem 0',
+    borderBottom: location.pathname === path ? '2px solid var(--text-primary)' : '2px solid transparent',
+  });
+
   return (
     <nav style={{
-      padding: '2rem 0',
+      padding: '1.25rem 0',
       position: 'sticky',
       top: 0,
-      backgroundColor: 'rgba(10, 25, 47, 0.85)',
-      backdropFilter: 'blur(10px)',
-      zIndex: 100
+      backgroundColor: 'rgba(255, 255, 255, 0.95)',
+      backdropFilter: 'blur(8px)',
+      zIndex: 100,
+      borderBottom: '1px solid var(--border-light)'
     }}>
       <div className="container" style={{
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--white)' }}>
-          Diana Zaraza<span style={{ color: 'var(--accent)' }}>.</span>
+        <Link to="/" style={{
+          fontSize: '1.15rem',
+          fontWeight: 700,
+          color: 'var(--text-primary)',
+          fontFamily: "'Source Serif 4', Georgia, serif",
+          letterSpacing: '-0.01em'
+        }}>
+          Diana Zaraza
         </Link>
 
-        <div style={{ display: 'flex', gap: '2rem' }}>
-          <Link
-            to="/"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              color: location.pathname === '/' ? 'var(--accent)' : 'var(--text-secondary)'
-            }}
-          >
-            <Briefcase size={18} /> Portfolio
-          </Link>
-          <Link
-            to="/project"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              color: location.pathname === '/project' ? 'var(--accent)' : 'var(--text-secondary)'
-            }}
-          >
-            <FolderOpen size={18} /> Project
-          </Link>
-          <Link
-            to="/resume"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              color: location.pathname === '/resume' ? 'var(--accent)' : 'var(--text-secondary)'
-            }}
-          >
-            <FileText size={18} /> Resume
-          </Link>
+        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+          <Link to="/" style={linkStyle('/')}>Project</Link>
+          <Link to="/portfolio" style={linkStyle('/portfolio')}>Portfolio</Link>
+          <Link to="/resume" style={linkStyle('/resume')}>Resume</Link>
         </div>
       </div>
     </nav>
