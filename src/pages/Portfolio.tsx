@@ -45,7 +45,7 @@ const timelineData: TimelineGroup[] = [
                 id: 'hiring-logistics',
                 title: 'Project Management Platform Deployment',
                 company: 'Ecosi',
-                description: 'Collaborated with HR to deploy a new hiring platform and supported end-to-end onboarding coordination.',
+                description: 'Drove cross-functional deployment of a new project management platform in partnership with engineering, owning adoption and workflow integration end-to-end.',
                 skills: ['HR Ops', 'Logistics', 'Platform Deployment']
             },
             {
