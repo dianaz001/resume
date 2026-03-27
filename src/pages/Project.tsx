@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin } from 'lucide-react';
 
 interface Module {
     id: string;
@@ -39,26 +40,26 @@ const techStack = [
 const Project: React.FC = () => {
     return (
         <div className="container">
-            <header style={{ padding: '4rem 0 2rem' }}>
-                <p style={{ fontSize: '0.85rem', color: 'var(--accent)', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
-                    Personal Project
-                </p>
-                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>DianaZ's Operations Hub</h1>
-                <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '650px' }}>
+            <header style={{ padding: '3.5rem 0 2rem' }}>
+                <h1 style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>DianaZ's Operations Hub</h1>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                    <MapPin size={14} /> Toronto
+                </div>
+                <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', maxWidth: '650px', lineHeight: 1.7 }}>
                     A personal life management app that centralizes finances, health, rentals, and more into one clean dashboard.
                 </p>
 
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1.5rem' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '1.25rem' }}>
                     {techStack.map((tech) => (
                         <span
                             key={tech}
                             style={{
                                 fontSize: '0.8rem',
-                                color: 'var(--accent)',
-                                backgroundColor: 'rgba(46, 139, 87, 0.1)',
+                                color: 'var(--text-secondary)',
+                                backgroundColor: 'var(--secondary)',
                                 padding: '0.3rem 0.75rem',
-                                borderRadius: '4px',
-                                border: '1px solid rgba(46, 139, 87, 0.2)'
+                                borderRadius: '16px',
+                                border: '1px solid var(--border)'
                             }}
                         >
                             {tech}
@@ -67,14 +68,14 @@ const Project: React.FC = () => {
                 </div>
             </header>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem', paddingBottom: '8rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', paddingBottom: '6rem' }}>
                 {modules.map((mod, index) => (
                     <section
                         key={mod.id}
                         style={{
                             display: 'flex',
                             flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
-                            gap: '3rem',
+                            gap: '2.5rem',
                             alignItems: 'center',
                             flexWrap: 'wrap'
                         }}
@@ -85,7 +86,7 @@ const Project: React.FC = () => {
                             minWidth: '300px',
                             borderRadius: '12px',
                             overflow: 'hidden',
-                            border: '1px solid rgba(0, 0, 0, 0.08)',
+                            border: '1px solid var(--border)',
                             boxShadow: 'var(--shadow)'
                         }}>
                             <img
@@ -100,25 +101,25 @@ const Project: React.FC = () => {
 
                         {/* Details */}
                         <div style={{ flex: '1 1 35%', minWidth: '260px' }}>
-                            <h2 style={{ fontSize: '1.75rem', marginBottom: '0.75rem' }}>{mod.title}</h2>
-                            <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', marginBottom: '1.25rem', lineHeight: 1.7 }}>
+                            <h2 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{mod.title}</h2>
+                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: 1.7 }}>
                                 {mod.description}
                             </p>
-                            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                                 {mod.features.map((feature) => (
                                     <li
                                         key={feature}
                                         style={{
-                                            fontSize: '0.9rem',
+                                            fontSize: '0.85rem',
                                             color: 'var(--text-secondary)',
-                                            paddingLeft: '1.25rem',
+                                            paddingLeft: '1rem',
                                             position: 'relative'
                                         }}
                                     >
                                         <span style={{
                                             position: 'absolute',
                                             left: 0,
-                                            color: 'var(--accent)'
+                                            color: 'var(--text-muted)'
                                         }}>
                                             &bull;
                                         </span>

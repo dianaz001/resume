@@ -51,7 +51,7 @@ const portfolioData: PortfolioItem[] = [
         skills: ['Process Engineering', 'Automation', 'KPI Tracking'],
         placeholderIcon: <Cpu size={24} />,
         category: 'Operations',
-        image: '/assets/ops-workflow.png' // Using same style for now or duplicate logic if wanted
+        image: '/assets/ops-workflow.png'
     },
     {
         id: 'hiring-logistics',
@@ -68,81 +68,64 @@ const portfolioData: PortfolioItem[] = [
 const Portfolio: React.FC = () => {
     return (
         <div className="container">
-            <header style={{ padding: '4rem 0' }}>
-                <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Portfolio</h1>
-                <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px' }}>
+            <header style={{ padding: '3.5rem 0 2rem' }}>
+                <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Portfolio</h1>
+                <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', maxWidth: '550px' }}>
                     Selected projects and achievements from my professional journey.
                 </p>
             </header>
 
             <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-                gap: '2.5rem',
-                paddingBottom: '8rem'
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem',
+                paddingBottom: '6rem'
             }}>
                 {portfolioData.map((item) => (
                     <div
                         key={item.id}
                         style={{
-                            backgroundColor: 'var(--secondary)',
+                            backgroundColor: 'var(--white)',
                             borderRadius: '12px',
-                            overflow: 'hidden',
-                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-between',
-                            border: '1px solid rgba(0, 0, 0, 0.05)'
+                            border: '1px solid var(--border)',
+                            padding: '1.25rem 1.5rem',
+                            transition: 'box-shadow 0.2s ease, border-color 0.2s ease',
+                            cursor: 'default'
                         }}
                         onMouseEnter={(e) => {
-                            e.currentTarget.style.transform = 'translateY(-10px)';
-                            e.currentTarget.style.boxShadow = 'var(--shadow)';
-                            e.currentTarget.style.borderColor = 'var(--accent)';
+                            e.currentTarget.style.boxShadow = 'var(--shadow-hover)';
+                            e.currentTarget.style.borderColor = '#D1D5DB';
                         }}
                         onMouseLeave={(e) => {
-                            e.currentTarget.style.transform = 'translateY(0)';
                             e.currentTarget.style.boxShadow = 'none';
-                            e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.05)';
+                            e.currentTarget.style.borderColor = 'var(--border)';
                         }}
                     >
-                        {/* Image Section */}
-                        <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
-                            <img
-                                src={item.image}
-                                alt={item.title}
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'cover',
-                                    transition: 'transform 0.5s ease'
-                                }}
-                            />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>{item.title}</h3>
+                            {item.company && (
+                                <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>{item.company}</span>
+                            )}
                         </div>
-
-                        <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-                            <h3 style={{ marginBottom: '0.5rem', fontSize: '1.25rem' }}>{item.title}</h3>
-                            {item.company && <p style={{ color: 'var(--accent)', fontSize: '0.85rem', marginBottom: '1rem', fontWeight: 500 }}>{item.company}</p>}
-                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.5rem', flexGrow: 1 }}>
-                                {item.description}
-                            </p>
-
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: 'auto' }}>
-                                {item.skills.map((skill) => (
-                                    <span
-                                        key={skill}
-                                        style={{
-                                            fontSize: '0.75rem',
-                                            color: 'var(--accent)',
-                                            backgroundColor: 'rgba(46, 139, 87, 0.1)',
-                                            padding: '0.2rem 0.6rem',
-                                            borderRadius: '4px',
-                                            border: '1px solid rgba(46, 139, 87, 0.2)'
-                                        }}
-                                    >
-                                        {skill}
-                                    </span>
-                                ))}
-                            </div>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem', lineHeight: 1.6 }}>
+                            {item.description}
+                        </p>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                            {item.skills.map((skill) => (
+                                <span
+                                    key={skill}
+                                    style={{
+                                        fontSize: '0.75rem',
+                                        color: 'var(--text-secondary)',
+                                        backgroundColor: 'var(--secondary)',
+                                        padding: '0.2rem 0.6rem',
+                                        borderRadius: '12px',
+                                        border: '1px solid var(--border)'
+                                    }}
+                                >
+                                    {skill}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 ))}

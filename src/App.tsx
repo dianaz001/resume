@@ -20,9 +20,10 @@ function App() {
 
                 <footer style={{
                     textAlign: 'center',
-                    padding: '4rem 0',
-                    color: 'var(--text-secondary)',
-                    fontSize: '0.9rem'
+                    padding: '3rem 0',
+                    color: 'var(--text-muted)',
+                    fontSize: '0.8rem',
+                    borderTop: '1px solid var(--border-light)'
                 }}>
                     <p>© {new Date().getFullYear()} Diana Zaraza. Built with React & Vite.</p>
                 </footer>
