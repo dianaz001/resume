@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FileText, Briefcase, FolderOpen } from 'lucide-react';
+import { FileText, Briefcase, FolderOpen, Layers } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -45,6 +45,17 @@ const Navbar: React.FC = () => {
             }}
           >
             <FolderOpen size={18} /> Project
+          </Link>
+          <Link
+            to="/projects"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: location.pathname === '/projects' ? 'var(--accent)' : 'var(--text-secondary)'
+            }}
+          >
+            <Layers size={18} /> Projects
           </Link>
           <Link
             to="/resume"
