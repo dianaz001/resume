@@ -87,7 +87,17 @@ const Project: React.FC = () => {
                             borderRadius: '12px',
                             overflow: 'hidden',
                             border: '1px solid var(--border)',
-                            boxShadow: 'var(--shadow)'
+                            boxShadow: 'var(--shadow)',
+                            transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                            cursor: 'pointer'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = 'scale(1.03)';
+                            e.currentTarget.style.boxShadow = 'var(--shadow-hover)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = 'scale(1)';
+                            e.currentTarget.style.boxShadow = 'var(--shadow)';
                         }}>
                             <img
                                 src={mod.image}
