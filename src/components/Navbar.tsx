@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <Link to="/" style={linkStyle('/')}>Project</Link>
+          <Link to="/" style={linkStyle('/')}>Personal Project</Link>
           <Link to="/portfolio" style={linkStyle('/portfolio')}>Portfolio</Link>
           <Link to="/resume" style={linkStyle('/resume')}>Resume</Link>
         </div>
