@@ -46,7 +46,7 @@ const Project: React.FC = () => {
                     <MapPin size={14} /> Toronto
                 </div>
                 <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', maxWidth: '650px', lineHeight: 1.7 }}>
-                    A personal life management app that centralizes finances, health, rentals, and more into one clean dashboard.
+                    A fully vibe coded personal life management app that centralizes finances, health, rentals, and more into one clean dashboard.
                 </p>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '1.25rem' }}>
